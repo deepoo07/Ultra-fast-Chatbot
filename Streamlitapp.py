@@ -9,7 +9,7 @@ from groq import Groq
 import os
 
 # 🔐 Paste your Groq API key here
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 st.set_page_config(page_title="Groq Chatbot", page_icon="🤖")
 
